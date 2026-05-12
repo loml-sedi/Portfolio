@@ -235,6 +235,7 @@ small {
 .skills {
   padding: 2rem 1rem;
   text-align: center;
+  background: var(--bg-main)
 }
 
 .skills-list {
