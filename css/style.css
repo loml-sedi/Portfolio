@@ -31,6 +31,14 @@
   --small: 0.9rem;
 }
 
+body {
+  background: var(--bg-main);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-size: var(--body);
+  line-height: 1.6;
+}
+
 h1, h2, h3 {
   font-family: var(--font-heading);
   line-height: 1.2;
@@ -256,9 +264,8 @@ small {
 }
 
 .about {
-  padding: 2rem 1rem;
+  padding: 2rem;
   background: var(--bg-section);
-  border-radius: 16px;
 }
 
 .about__content {
@@ -289,4 +296,84 @@ small {
   background: var(--light);
   padding: 0.8rem;
   border-radius: 50%;
+}
+
+.page-title{
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+
+.about-intro{
+  background: var(--bg-section);
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 16px;
+}
+
+.about-intro_image {
+  height: 200px;
+  background: var(--warm);
+  border-radius: 16px;
+}
+
+.about-intro_text p {
+  margin-bottom: 1rem;
+}
+
+.about-skills{
+  padding: 2rem 1rem;;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-header{
+  width:100%;
+  padding: 1rem;
+  border: none;
+  background: var(--mid);
+  color: var(--dark);
+  font-family: var(--font-heading);
+  text-align: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  background: var(--light);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.journey {
+  padding: 2rem 1rem;
+}
+
+.timeline{
+  border-left: 3px solid var(--mid);
+  padding: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: 10px;
+}
+
+.about-cta{
+  text-align: center;
+  padding: 2rem 1rem;
 }
