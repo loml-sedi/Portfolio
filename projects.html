@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/projects.js" defer></script>
+</head>
+<body>
+<header class="nav">
+    <div class="nav__container">
+        <div class="logo">Logo</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="about.html">About</a>
+            <a href="play.html">Play</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-icon">☰</div>
+  </div>
+</header>
+
+<section class="page-title">
+    <h1>My Projects</h1>
+    <p>Explore a crated collection of my work</p>
+</section>
+
+<section class="filter-section">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="development">Development</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+    </div>
+</section>
+
+<section class="prts-grid-section">
+    <div class="projects-grid" id="projectsGrid">
+        <div class="loading-spinner">Loading projects...</div>
+    </div>
+</section>
+
+<section class="pagination-section">
+    <div class="pagination" id="pagination">
+        <button class="page-btn prev-btn" disabled>← Previous</button>
+        <span class="page-info">Page 1 of 1</span>
+        <button class="page-btn next-btn" disabled>Next →</button>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="icons">
+    <span><a href="https://linkedin.com/in/lesedi-leseilane" target="_blank">💼</a></span>
+    <span><a href="https://github.com/loml-sedi/" target="_blank">🐱</a></span>
+    <span>
+      <a 
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=lesedi.leseilane6@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer">
+          ✉
+      </a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
