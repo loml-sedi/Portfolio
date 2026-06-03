@@ -42,50 +42,43 @@
     <p>Feel free to reach out via the form or through my social platforms.</p>
 
     <div class="contact-links">
-      <span>📧 lesedi.leseilane6@gmail.com</span>
-      <span>💼 <a href="https://linkedin.com/in/lesedi-leseilane" target="_blank">LinkedIn</a></span>
-      <span>🐱 <a href="https://github.com/loml-sedi/" target="_blank">Github</a></span>
+      <span>📧 <a href="mailto:lesedi.leseilane6@gmail.com"> lesedi.leseilane6@gmail.com</a></span>
+      <span>💼 <a href="https://linkedin.com/in/lesedi-leseilane" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+      <span>🐱 <a href="https://github.com/loml-sedi/" target="_blank" rel="noopener noreferrer">Github</a></span>
     </div>
   </div>
 
-  <form class="contact-form">
+  <form class="contact-form" id="contactForm" novalidate>
 
     <div class="form-group">
-      <label>Name</label>
-      <input type="text" placeholder="Your name">
-      <small class="error">Error message</small>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      <small class="error" id="nameError">Error message</small>
     </div>
 
     <div class="form-group">
-      <label>Email</label>
-      <input type="email" placeholder="your@email.com">
-      <small class="error">Error message</small>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com">
+      <small class="error" id="emailError">Error message</small>
     </div>
 
     <div class="form-group">
-      <label>Message</label>
-      <textarea rows="5" placeholder="Your message..."></textarea>
-      <small class="error">Error message</small>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+      <small class="error" id="messageError">Error message</small>
     </div>
 
     <button type="submit" class="btn primary">Send Message</button>
-
+    <p id="successMessage"></p>
   </form>
 
 </section>
 
 <footer class="footer">
   <div class="icons">
-    <span><a href="https://linkedin.com/in/lesedi-leseilane" target="_blank">💼</a></span>
-    <span><a href="https://github.com/loml-sedi/" target="_blank">🐱</a></span>
-    <span>
-      <a 
-      href="https://mail.google.com/mail/?view=cm&fs=1&to=lesedi.leseilane6@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer">
-          ✉
-      </a>
-    </span>
+    <span><a href="https://linkedin.com/in/lesedi-leseilane" target="_blank" rel="noopener noreferrer">💼</a></span>
+    <span><a href="https://github.com/loml-sedi/" target="_blank" rel="noopener noreferrer">🐱</a></span>
+    <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=lesedi.leseilane6@gmail.com" target="_blank" rel="noopener noreferrer">✉</a></span>
   </div>
 </footer>
 
