@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const viewWorkBtn = document.querySelector('.hero__buttons .primary');
-    const playGameBtn = document.querySelector('.hero__buttons .secondary');
+    const viewWorkBtn = document.querySelector('.hero-buttons .primary');
+    const playGameBtn = document.querySelector('.hero-buttons .secondary');
 
     if (viewWorkBtn) {
         viewWorkBtn.addEventListener('click', () => {
