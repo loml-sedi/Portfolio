@@ -55,7 +55,36 @@
         duration: "12 Weeks",
         engine: "Unity 6000.3.6f1",
         platform: "PC (Windows)",
-    }
+    },
+
+    {
+    id: 3,
+    title: "e-plantShopping Page",
+    description: "A React-based e-commerce web application where users can browse and purchase houseplants with a fully functional shopping cart system.",
+    fullDescription: "e-plantShopping is a React-based e-commerce web application that allows users to browse a curated selection of houseplants and add them to a shopping cart. The application demonstrates component-based architecture, state management using Redux Toolkit, and dynamic UI rendering. Users can filter and view plant categories, add items to their cart, update quantities, and remove products. The cart state is managed globally using Redux, ensuring consistent updates across the application. The project also includes a responsive UI built with HTML and CSS, and implements key e-commerce features such as dynamic cart totals, product categorisation, and interactive user feedback. The system architecture follows modern React patterns including reusable components, unidirectional data flow, and global state management for scalability.",
+    image: "images/e-plantshopping-cover.png",
+    category: "development",
+    year: "2026",
+    tags: [
+        "React",
+        "Redux",
+        "E-Commerce",
+        "Frontend Development",
+        "State Management",
+        "UI Design"
+    ],
+    technologies: [
+        "React",
+        "Redux Toolkit",
+        "JavaScript",
+        "CSS",
+        "HTML"
+    ],
+    role: "Solo Developer",
+    duration: "Project-Based (Academic Module)",
+    engine: "React Framework",
+    platform: "Web (Browser)"
+},
 ];
 
 let currentPage = 1;
@@ -171,17 +200,15 @@ function changePage(direction) {
 function setFilter(filterValue){
     currentFilter = filterValue;
 
-    if (filterButtons.length) {
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', function () {
-            const filterValue = this.getAttribute('data-filter');
-            setFilter(filterValue);
-        });
-    });
-}
-
     filterProjects();
 }
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+        const filterValue = this.getAttribute('data-filter');
+        setFilter(filterValue);
+    });
+});
 
 function resetFilter() {
     setFilter("all");
