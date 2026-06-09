@@ -117,6 +117,14 @@ small {
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
 .menu-icon {
   font-size: 1.5rem;
   cursor: pointer;
@@ -190,7 +198,7 @@ small {
 }
 
 .secondary:hover {
-  background: var(--light);
+  background: var(--accent-soft);
 }
 
 .projects {
@@ -275,7 +283,7 @@ small {
 
 .skills-list span {
   background: var(--mid);
-  color: var(--dark);
+  color: var(--text-dark);
   padding: 0.5rem 1rem;
   border-radius: 12px;
 }
@@ -374,7 +382,7 @@ small {
   padding: 1rem;
   border: none;
   background: var(--mid);
-  color: var(--dark);
+  color: var(--text-dark);
   font-family: var(--font-heading);
   text-align: left;
   border-radius: 10px;
@@ -459,9 +467,18 @@ small {
 
 .contact-image {
   height: 180px;
-  background: var(--warm);
   border-radius: 16px;
   margin-bottom: 1rem;
+  overflow: hidden;
+  background: var(--warm); 
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  object-position: center; 
+  display: block;
 }
 
 .contact-links {
@@ -578,7 +595,7 @@ button {
 }
 
 #startBtn:hover {
-  background: var(--dark);
+  background: var(--accent-warm);
 }
 
 .filter-section {
@@ -688,12 +705,21 @@ button {
 
 .project-tag {
   padding: 0.25rem 0.75rem;
-  background: var(--bg-section);
+  background: var(--light);
+  color: var(--dark);
   border-radius: 15px;
   font-size: 0.7rem;
   font-weight: 500;
-  color: var(--dark);
 }
+
+.project-tag:nth-child(odd) {
+  background: var(--mid);
+}
+
+.project-tag:nth-child(even) {
+  background: var(--accent-soft);
+}
+
 
 .project-card-btn {
   width: 100%;
