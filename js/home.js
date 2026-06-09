@@ -178,4 +178,12 @@ projectList.innerHTML = featuredProjects.map(project =>
 
     populateProjects();
 
+    const readMoreBtn = document.querySelector('.about .btn.primary');
+
+    if (readMoreBtn) {
+        readMoreBtn.addEventListener('click', () => {
+            window.location.href = 'about.html';
+        });
+    }
+
 });
