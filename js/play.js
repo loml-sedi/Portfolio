@@ -170,7 +170,6 @@ function createTarget() {
         combo++;
 
         let points = POINTS_PER_HIT;
-       // if (combo >= 5) points += Math.floor(combo / 5) * 5;
 
         score += points;
         updateUI();
