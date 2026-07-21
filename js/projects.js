@@ -149,7 +149,7 @@
     role: "UI/UX Designer & Front-End Developer",
     duration: "Ongoing",
     tools: [ "Figma","HTML5","CSS3","JavaScript" ],
-    repoUrl: "ADD_LINK_HERE",
+    repoUrl: "https://github.com/loml-sedi/BotshepoGroup",
     demoUrl: "ADD_LINK_HERE",
     problem: "The client required a modern and professional website that establishes credibility, showcases their services clearly, and provides an intuitive user experience across desktop and mobile devices. The existing online presence lacked visual hierarchy, consistent branding, and responsive layouts.",
     process: [
