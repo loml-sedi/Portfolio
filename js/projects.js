@@ -40,7 +40,7 @@
         duration: "12 Weeks",
         engine: "Unity",
         platform: "PC (Windows)",
-        repoUrl: "ADD_LINK_HERE",
+        repoUrl: "https://github.com/loml-sedi/StaticMind",
         demoUrl: "ADD_LINK_HERE",
     },
     {
@@ -57,7 +57,7 @@
         duration: "12 Weeks",
         engine: "Unity",
         platform: "PC (Windows)",
-        repoUrl: "ADD_LINK_HERE",
+        repoUrl: "https://github.com/Acriid/ELEN3020-Morabaraba",
         demoUrl: "ADD_LINK_HERE",
     },
     {
@@ -74,7 +74,7 @@
         duration: "Project-Based (Academic Module)",
         engine: "React Framework",
         platform: "Web (Browser)",
-        repoUrl: "ADD_LINK_HERE",
+        repoUrl: "https://github.com/loml-sedi/e-plantShopping",
         demoUrl: "ADD_LINK_HERE",
 },
 {
@@ -91,7 +91,7 @@
     duration: "2 Weeks",
     engine: "Unity",
     platform: "PC (Windows)",
-    repoUrl: "ADD_LINK_HERE",
+    repoUrl: "https://github.com/loml-sedi/Mental",
     demoUrl: "ADD_LINK_HERE",
 },
 {
@@ -108,7 +108,7 @@
     duration: "2 Weeks",
     engine: "Unity",
     platform: "PC (Windows)",
-    repoUrl: "ADD_LINK_HERE",
+    repoUrl: "https://github.com/loml-sedi/EchoesOfTheDeep",
     demoUrl: "ADD_LINK_HERE",
 },
 {
