@@ -40,6 +40,8 @@
         duration: "12 Weeks",
         engine: "Unity",
         platform: "PC (Windows)",
+        repoUrl: "ADD_LINK_HERE",
+        demoUrl: "ADD_LINK_HERE",
     },
     {
         id: 2,
@@ -55,6 +57,8 @@
         duration: "12 Weeks",
         engine: "Unity",
         platform: "PC (Windows)",
+        repoUrl: "ADD_LINK_HERE",
+        demoUrl: "ADD_LINK_HERE",
     },
     {
         id: 3,
@@ -69,7 +73,9 @@
         role: "Solo Developer",
         duration: "Project-Based (Academic Module)",
         engine: "React Framework",
-        platform: "Web (Browser)"
+        platform: "Web (Browser)",
+        repoUrl: "ADD_LINK_HERE",
+        demoUrl: "ADD_LINK_HERE",
 },
 {
     id: 4,
@@ -85,6 +91,8 @@
     duration: "2 Weeks",
     engine: "Unity",
     platform: "PC (Windows)",
+    repoUrl: "ADD_LINK_HERE",
+    demoUrl: "ADD_LINK_HERE",
 },
 {
     id: 5,
@@ -100,6 +108,8 @@
     duration: "2 Weeks",
     engine: "Unity",
     platform: "PC (Windows)",
+    repoUrl: "ADD_LINK_HERE",
+    demoUrl: "ADD_LINK_HERE",
 },
 {
     id: 6,
@@ -115,6 +125,8 @@
     duration: "3 Weeks",
     engine: "Vanilla JS",
     platform: "Web (Browser)",
+    repoUrl: "https://github.com/loml-sedi/Portfolio",
+    demoUrl: "https://loml-sedi.github.io/Portfolio/",
     problem: "Existing portfolio templates often lacked personality or were overly complex, making it difficult to highlight work effectively. Many portfolios focus heavily on aesthetics but fail to help recruiters quickly understand the developer's skills and projects. The challenge was to create a portfolio that showcases projects clearly, is easy to navigate, demonstrates responsive web development, and reflects personal branding.",
     process: [
         "Research — Analysed portfolios from developers, designers, and creative technologists to identify patterns in navigation, layouts, and content presentation",
@@ -136,7 +148,9 @@
     tags: ["UI/UX Design","Web Design","Responsive Design","Front-End Development", "Brand Identity" ],
     role: "UI/UX Designer & Front-End Developer",
     duration: "Ongoing",
-    tools: [ "Figma","HTML5","CSS3","JavaScript","Adobe Illustrator" ],
+    tools: [ "Figma","HTML5","CSS3","JavaScript" ],
+    repoUrl: "ADD_LINK_HERE",
+    demoUrl: "ADD_LINK_HERE",
     problem: "The client required a modern and professional website that establishes credibility, showcases their services clearly, and provides an intuitive user experience across desktop and mobile devices. The existing online presence lacked visual hierarchy, consistent branding, and responsive layouts.",
     process: [
         "Research — Analysed modern corporate websites, competitor designs, and current UI/UX best practices to establish design direction.",
@@ -359,6 +373,11 @@ function openProjectModal(id) {
                     </div>
                 </div>
 
+                <div class="modal-links">
+                    ${project.demoUrl && project.demoUrl !== 'ADD_LINK_HERE' ? `<a class="btn primary" href="${project.demoUrl}" target="_blank" rel="noopener noreferrer">View Live</a>` : ''}
+                    ${project.repoUrl && project.repoUrl !== 'ADD_LINK_HERE' ? `<a class="btn secondary" href="${project.repoUrl}" target="_blank" rel="noopener noreferrer">View Code</a>` : ''}
+                </div>
+
                 <div class="modal-actions">
                     <button class="btn primary close-modal">Close</button>
                 </div>
@@ -412,6 +431,14 @@ function setActiveNavLink() {
     });
 }
 
+function openProjectFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get('id'));
+    if (id) {
+        openProjectModal(id);
+    }
+}
+
 function init() {
     if (projectsGrid) {
         renderProjects();
@@ -420,6 +447,7 @@ function init() {
     }
 
     setActiveNavLink();
+    openProjectFromURL();
 }
 
 window.resetFilter = resetFilter;
