@@ -105,40 +105,53 @@
     emailInput.addEventListener('input', validateEmail);
     messageInput.addEventListener('input', validateMessage);
 
-    form.addEventListener("submit", function(e) {
+    form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    console.log("Form submitted");
 
     const isNameValid = validateName();
     const isEmailValid = validateEmail();
     const isMessageValid = validateMessage();
 
+    console.log(isNameValid, isEmailValid, isMessageValid);
+
     if (!isNameValid || !isEmailValid || !isMessageValid) {
-        successMessage.textContent = "";
         return;
     }
 
+    console.log("Sending email...");
+
     emailjs.send("service_28fpwqm", "template_8eonv2e", {
-        name: nameInput.value,
-        email: emailInput.value,
-        message: messageInput.value
-    })
-    .then(() => {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value
+})
+.then((response) => {
+    console.log("SUCCESS!", response);
 
-        successMessage.textContent =
-            "Message sent successfully!";
+    successMessage.textContent = "✓ Your message has been sent successfully!";
+    successMessage.style.display = "block";
 
-        form.reset();
+    form.reset();
 
-        nameInput.classList.remove("input-success");
-        emailInput.classList.remove("input-success");
-        messageInput.classList.remove("input-success");
-
-    })
-    .catch(() => {
-
-        successMessage.textContent =
-            "Something went wrong. Please try again.";
-
+    [nameInput, emailInput, messageInput].forEach(input => {
+        input.classList.remove("input-success");
+        input.classList.remove("input-error");
     });
 
+    nameError.style.display = "none";
+    emailError.style.display = "none";
+    messageError.style.display = "none";
+
+    setTimeout(() => {
+        successMessage.style.display = "none";
+    }, 5000);
+})
+.catch((error) => {
+    console.error("FAILED", error);
+
+    successMessage.textContent = "❌ Something went wrong. Please try again.";
+    successMessage.style.display = "block";
+});
 });
