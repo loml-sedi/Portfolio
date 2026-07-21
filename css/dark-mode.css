@@ -1,0 +1,220 @@
+/* dark-mode.css
+   Heartstopper Volume 4 inspired dark mode.
+   Vol.4's cover leans warm/summer — mustard yellow, pool teal, coral-orange,
+   sage green — rather than the cooler pastel blue/green of earlier volumes.
+   This keeps a dark navy base and uses those tones as accents, so it reads
+   as an actual dark mode rather than "light mode, different colours".
+
+   This file only overrides colour — it does not touch layout, spacing,
+   or fonts, so your existing style.css and light mode are untouched.
+   Include AFTER style.css:
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/dark-mode.css">
+*/
+
+:root {
+    --hs-bg: #14181f;            /* deep navy-charcoal */
+    --hs-surface: #1d2430;       /* cards, form fields */
+    --hs-surface-alt: #232b39;
+    --hs-border: #333d4d;
+    --hs-text: #f4ecd8;          /* warm cream, cover background */
+    --hs-text-muted: #b9c0cc;
+    --hs-mustard: #e8a33d;       /* main cover tone */
+    --hs-teal: #2f8f8a;          /* pool water */
+    --hs-coral: #e8714a;         /* swim trunks / accents */
+    --hs-sage: #7c9473;          /* poolside plants */
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+[data-theme="dark"] body {
+    background-color: var(--hs-bg);
+    color: var(--hs-text);
+}
+
+/* Nav */
+[data-theme="dark"] .nav {
+    background-color: var(--hs-bg);
+    border-bottom: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .nav-links a {
+    color: var(--hs-text);
+}
+
+[data-theme="dark"] .nav-links a:hover,
+[data-theme="dark"] .nav-links a.active {
+    color: var(--hs-mustard);
+}
+
+[data-theme="dark"] .menu-icon,
+[data-theme="dark"] .theme-toggle {
+    color: var(--hs-text);
+    background: transparent;
+    border: 1px solid var(--hs-border);
+}
+
+/* Buttons */
+[data-theme="dark"] .btn {
+    background-color: var(--hs-surface-alt);
+    color: var(--hs-text);
+    border: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .btn.primary {
+    background-color: var(--hs-mustard);
+    color: #14181f;
+    border: none;
+}
+
+[data-theme="dark"] .btn.secondary {
+    background-color: var(--hs-teal);
+    color: #14181f;
+    border: none;
+}
+
+[data-theme="dark"] .btn:hover {
+    filter: brightness(1.1);
+}
+
+/* Hero / page titles */
+[data-theme="dark"] .hero,
+[data-theme="dark"] .page-title {
+    background-color: var(--hs-bg);
+    color: var(--hs-text);
+}
+
+/* Project cards */
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .project-card-content {
+    background-color: var(--hs-surface);
+    border: 1px solid var(--hs-border);
+    color: var(--hs-text);
+}
+
+[data-theme="dark"] .project-card-category {
+    color: var(--hs-mustard);
+}
+
+[data-theme="dark"] .project-tag {
+    background-color: var(--hs-surface-alt);
+    color: var(--hs-sage);
+    border: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .no-projects {
+    color: var(--hs-text-muted);
+}
+
+/* Filter buttons */
+[data-theme="dark"] .filter-section {
+    background-color: var(--hs-bg);
+}
+
+[data-theme="dark"] .filter-btn {
+    background-color: var(--hs-surface-alt);
+    color: var(--hs-text);
+    border: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .filter-btn.active {
+    background-color: var(--hs-coral);
+    color: #14181f;
+    border-color: var(--hs-coral);
+}
+
+/* Pagination */
+[data-theme="dark"] .page-btn {
+    background-color: var(--hs-surface-alt);
+    color: var(--hs-text);
+    border: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .page-info {
+    color: var(--hs-text-muted);
+}
+
+/* Modal */
+[data-theme="dark"] .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .modal-content {
+    background-color: var(--hs-surface);
+    color: var(--hs-text);
+    border: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .modal-close {
+    color: var(--hs-text);
+}
+
+[data-theme="dark"] .modal-category {
+    color: var(--hs-mustard);
+}
+
+[data-theme="dark"] .modal-process-list li {
+    color: var(--hs-text);
+}
+
+/* Contact form */
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form textarea {
+    background-color: var(--hs-surface-alt);
+    color: var(--hs-text);
+    border: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .contact-form input.input-success,
+[data-theme="dark"] .contact-form textarea.input-success {
+    border-color: var(--hs-sage);
+}
+
+[data-theme="dark"] .contact-form input.input-error,
+[data-theme="dark"] .contact-form textarea.input-error {
+    border-color: var(--hs-coral);
+}
+
+[data-theme="dark"] .contact-links a {
+    color: var(--hs-mustard);
+}
+
+/* Footer */
+[data-theme="dark"] .footer {
+    background-color: var(--hs-bg);
+    border-top: 1px solid var(--hs-border);
+}
+
+[data-theme="dark"] .footer a {
+    color: var(--hs-text);
+}
+
+[data-theme="dark"] .footer a:hover {
+    color: var(--hs-mustard);
+}
+
+
+/* Comprehensive variable remap */
+[data-theme="dark"]{
+ --bg-main:#14181f;
+ --bg-section:#1d2430;
+ --dark:#f4ecd8;
+ --mid:#2f8f8a;
+ --light:#232b39;
+ --warm:#e8714a;
+ --accent:#e8a33d;
+ --accent-warm:#f0b95a;
+ --accent-soft:#7c9473;
+ --text-dark:#f4ecd8;
+ --text-light:#14181f;
+}
+[data-theme="dark"] *{
+ scrollbar-color: var(--hs-mustard) var(--hs-surface);
+}
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .project-card:hover{
+ background:linear-gradient(135deg,var(--hs-surface),var(--hs-surface-alt))!important;
+ border-color:var(--hs-border)!important;
+}

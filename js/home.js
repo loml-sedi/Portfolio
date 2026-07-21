@@ -96,13 +96,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 projectList.innerHTML = featuredProjects.map(project => 
             `<div class="project-card" data-id="${project.id}">
-                <div class="project-img">
-                <img src="${project.image}" alt="${project.title}">
+                <img class="project-card-image" src="${project.image}" alt="${project.title}" loading="lazy">
+                <div class="project-card-content">
+                    <span class="project-card-category">${project.category.toUpperCase()}</span>
+                    <h3 class="project-card-title">${project.title}</h3>
+                    <p class="project-card-description">${project.description.substring(0, 100)}${project.description.length > 100 ? '...' : ''}</p>
+                    <div class="project-card-tags">
+                        ${project.tags.slice(0, 3).map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                    </div>
+                    <button class="project-card-btn view-project" data-id="${project.id}">
+                        View Project →
+                    </button>
                 </div>
-                <h3>${project.title}</h3>
-                <button class="btn secondary view-project" data-id="${project.id}">
-                    View Project →
-                </button>
             </div>
         `).join('');
 

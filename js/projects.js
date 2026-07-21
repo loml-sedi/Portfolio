@@ -31,7 +31,7 @@
         title: "Static Mind",
         description: "A psychological horror game centred around focus, rising static, and corrupted systems that gradually break the player's trust in the game world.",
         fullDescription: "Static Mind is a psychological horror prototype that explores how a single continuous input mechanic can create tension, uncertainty, and player distrust. Players must manage an ever-increasing static resource by focusing on designated zones and navigating increasingly corrupted environments. As the game progresses through eight levels, new mechanics are introduced that deliberately undermine the player's expectations, including corrupted focus zones, fake focus zones, phantom enemies, delayed safe zones, false exits, and deceptive UI feedback. Narrative progression is delivered through memory fragments unlocked at the end of each level, gradually revealing the true nature of the system. The final level combines all previously introduced mechanics into a timed collapse sequence where players must survive a fully corrupted environment while uncovering the remaining fragments of the story.",
-        image: "images/staticmind-cover.png",
+        image: "https://placehold.co/600x400/BCE3E0/00A19C?text=Static+Mind",
         category: "design",
         year: "2026",
         tags: ["Psychological Horror", "Unity", "Game Design", "Level Design", "Narrative Design", "Player Psychology"],
@@ -46,7 +46,7 @@
         title: "Morabara Online",
         description: "A digital adaptation of the traditional African strategy board game Morabara, featuring online multiplayer and AI opponents with three difficulty levels.",
         fullDescription: "Morabara Online is a digital implementation of the traditional African strategy board game Morabara (also known as Twelve Men's Morris), a variant of the ancient game Nine Men's Morris popular in South Africa and Lesotho. The game supports three board variants: the standard twelve-piece Morabara, Nine Men's Morris, and Six Men's Morris. Players can compete against each other online using Unity Relay for connection management and lobby creation, or against an AI opponent with three distinct difficulty levels. The AI implements strategic decision-making including mill completion prioritisation, opponent mill blocking, and potential mill preservation, with behaviour scaling appropriately across Easy, Normal, and Hard difficulties. I was responsible for implementing the piece system using ScriptableObjects to enable efficient data management across variants, designing the user interface using Unity UI Toolkit for the setup screen and in-game HUD, and producing comprehensive user and technical documentation. The project follows a server-authoritative multiplayer architecture where all moves are validated on the host before being broadcast to clients, ensuring fair play and preventing cheating.",
-        image: "images/Morabaraba-cover.png",
+        image: "https://placehold.co/600x400/BCE3E0/00A19C?text=Morabara+Online",
         category: "design",
         year: "2026",
         tags: ["Strategy", "Multiplayer", "AI", "UI Design", "Technical Documentation", "Unity", "Localisation/African Games"],
@@ -61,7 +61,7 @@
         title: "e-plantShopping Page",
         description: "A React-based e-commerce web application where users can browse and purchase houseplants with a fully functional shopping cart system.",
         fullDescription: "e-plantShopping is a React-based e-commerce web application that allows users to browse a curated selection of houseplants and add them to a shopping cart. The application demonstrates component-based architecture, state management using Redux Toolkit, and dynamic UI rendering. Users can filter and view plant categories, add items to their cart, update quantities, and remove products. The cart state is managed globally using Redux, ensuring consistent updates across the application. The project also includes a responsive UI built with HTML and CSS, and implements key e-commerce features such as dynamic cart totals, product categorisation, and interactive user feedback. The system architecture follows modern React patterns including reusable components, unidirectional data flow, and global state management for scalability.",
-        image: "images/shop-cover.png",
+        image: "https://placehold.co/600x400/BCE3E0/00A19C?text=e-plantShopping",
         category: "development",
         year: "2026",
         tags: ["React","Redux","E-Commerce","Frontend Development","State Management","UI Design"],
@@ -76,7 +76,7 @@
     title: "Mental",
     description: "A psychological experience exploring bipolar disorder through shifting moods, unstable perception, and dynamic gameplay systems that reflect emotional extremes.",
     fullDescription: "Mental is a psychological game that explores the lived experience of bipolar disorder through interactive systems that shift between contrasting emotional states. The player navigates environments that dynamically change based on mood fluctuations, altering visuals, mechanics, audio, and controls to reflect manic and depressive phases. During manic states, the game accelerates with heightened sensitivity, rapid movement, and overwhelming sensory input, while depressive states slow down interaction, reduce visibility, and restrict player agency. The project uses environmental storytelling and system-driven design to communicate emotional instability without explicit exposition. I was responsible for designing the core mood-switching system, implementing gameplay state transitions, and balancing the contrast between emotional phases to ensure both playability and thematic impact. The game aims to create empathy through mechanic-driven narrative design rather than dialogue or traditional storytelling.",
-    image: "images/mental-cover.png",
+    image: "https://placehold.co/600x400/BCE3E0/00A19C?text=Mental",
     category: "design",
     year: "2026",
     tags: ["Psychological", "Narrative Design", "Game Mechanics", "Emotion Systems", "Unity", "Experimental Gameplay"],
@@ -91,7 +91,7 @@
     title: "Echoes of the Deep",
     description: "An atmospheric echo-location exploration game where players navigate unknown environments using sound waves instead of vision.",
     fullDescription: "Echoes of the Deep is an atmospheric exploration game built around echo-location mechanics, where the player navigates a dark, unknown environment using sound pulses instead of visual input. The world is intentionally obscured, forcing players to interpret spatial information through returning echoes that briefly reveal geometry, hazards, and points of interest. The core gameplay loop revolves around emitting sound waves, interpreting echo feedback, and gradually building a mental map of the environment. As the game progresses, environmental complexity increases, introducing layered spaces, misleading echoes, and sound-based puzzles that challenge spatial reasoning and memory. I was responsible for designing and implementing the echo-location system, including ray-based sound propagation, timed reveal mechanics, and environmental interaction feedback. The project focuses on sensory substitution as a core gameplay mechanic, translating vision-based navigation into an audio-driven experience that emphasises tension, uncertainty, and discovery.",
-    image: "images/indie-cover.png",
+    image: "https://placehold.co/600x400/BCE3E0/00A19C?text=Echoes+of+the+Deep",
     category: "design",
     year: "2026",
     tags: ["Echo Location", "Puzzle", "Atmospheric", "Experimental Gameplay", "Level Design", "Audio Design"],
@@ -100,6 +100,50 @@
     duration: "2 Weeks",
     engine: "Unity",
     platform: "PC (Windows)",
+},
+{
+    id: 6,
+    title: "Portfolio Website — Design & Development Case Study",
+    description: "A comprehensive UI/UX and front-end development case study for my personal portfolio, documenting the design process, technical implementation, and key decisions.",
+    fullDescription: "This portfolio website was designed and developed as a personal branding project to demonstrate both technical and creative abilities. The objective was to create a responsive, accessible platform that would effectively showcase projects to potential employers and collaborators. The website features dynamic project cards generated from JavaScript data structures, category filtering, pagination, and interactive project modals. The interface uses a warm pastel colour palette to communicate creativity while maintaining readability, with typography choices that reflect modern design sensibilities. All content is generated dynamically, ensuring maintainability and scalability as new projects are added. The development process followed a mobile-first approach, with careful attention to responsive layouts, semantic HTML, and reusable CSS architecture. The project demonstrates component-based thinking without frameworks, showcasing vanilla JavaScript proficiency and CSS architecture skills.",
+    image: "https://placehold.co/600x400/BCE3E0/00A19C?text=Portfolio+Website",
+    category: "ui/ux",
+    year: "2026",
+    tags: ["UI Design", "UX Research", "Front-End Development", "Responsive Design", "JavaScript", "CSS Architecture", "Accessibility"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Figma", "Git", "GitHub"],
+    role: "UI/UX Designer & Front-End Developer",
+    duration: "3 Weeks",
+    engine: "Vanilla JS",
+    platform: "Web (Browser)",
+    problem: "Existing portfolio templates often lacked personality or were overly complex, making it difficult to highlight work effectively. Many portfolios focus heavily on aesthetics but fail to help recruiters quickly understand the developer's skills and projects. The challenge was to create a portfolio that showcases projects clearly, is easy to navigate, demonstrates responsive web development, and reflects personal branding.",
+    process: [
+        "Research — Analysed portfolios from developers, designers, and creative technologists to identify patterns in navigation, layouts, and content presentation",
+        "Wireframing — Created low-fidelity wireframes to establish page hierarchy, navigation structure, and responsive layouts before development",
+        "Visual Design — Developed a warm pastel colour palette (peach, coral, teal, mint) with Poppins for headings and Inter for body text to balance creativity with readability",
+        "Development — Built the interface using semantic HTML, modular CSS with custom properties, and vanilla JavaScript for dynamic content generation, filtering, pagination, and modals",
+        "Testing — Validated responsive behaviour across devices, form validation functionality, and accessibility considerations including semantic HTML, colour contrast, and keyboard accessibility"
+    ],
+    outcome: "The completed portfolio successfully demonstrates both design and development skills, serving as a project showcase and practical JavaScript demonstration. Key outcomes include a fully responsive interface, maintainable dynamic content system, interactive filtering and pagination, and reusable CSS architecture using custom properties. The website effectively communicates the developer's capabilities to potential employers through thoughtful design and clean implementation."
+},
+{
+    id: 7,
+    title: "Professional Company Website (Work in Progress)",
+    description: "Designing and developing a modern, responsive corporate website focused on professionalism, usability, and brand identity.",
+    fullDescription: "This ongoing project involves the complete design and development of a professional company website. The goal is to create a clean, trustworthy, and responsive online presence that effectively communicates the company's services while maintaining a strong visual identity. The website is currently in development, with branding, interface design, and front-end implementation actively being refined.",
+    image: "images/wip.jpeg",
+    category: "ui/ux",
+    year: "2026",
+    tags: ["UI/UX Design","Web Design","Responsive Design","Front-End Development", "Brand Identity" ],
+    role: "UI/UX Designer & Front-End Developer",
+    duration: "Ongoing",
+    tools: [ "Figma","HTML5","CSS3","JavaScript","Adobe Illustrator" ],
+    problem: "The client required a modern and professional website that establishes credibility, showcases their services clearly, and provides an intuitive user experience across desktop and mobile devices. The existing online presence lacked visual hierarchy, consistent branding, and responsive layouts.",
+    process: [
+        "Research — Analysed modern corporate websites, competitor designs, and current UI/UX best practices to establish design direction.",
+        "Branding & Design — Developed a professional colour palette based on the company's logo (#E6A026 and #0A0A0A), selected typography, created wireframes, and designed responsive page layouts in Figma.",
+        "Development — Implemented the interface using HTML, CSS, and JavaScript with a focus on accessibility, responsiveness, and reusable components.",
+        "Iteration — Continuously refining layouts, animations, navigation, and visual hierarchy based on ongoing testing and feedback."],
+    outcome: "The project is currently a work in progress. Core branding, layouts, and responsive front-end components have been established, with ongoing improvements focused on performance, accessibility, visual polish, and user experience before final deployment."
 }
 ];
 
@@ -268,21 +312,43 @@ function openProjectModal(id) {
                     <p>${project.role}</p>
                 </div>
 
+                ${project.problem ? `
+                <div class="modal-section">
+                    <h3>Problem</h3>
+                    <p>${project.problem}</p>
+                </div>` : ''}
+
+                ${project.process ? `
+                <div class="modal-section">
+                    <h3>Process</h3>
+                    <ul class="modal-process-list">
+                        ${project.process.map(step => `<li>${step}</li>`).join('')}
+                    </ul>
+                </div>` : ''}
+
+                ${project.outcome ? `
+                <div class="modal-section">
+                    <h3>Outcome</h3>
+                    <p>${project.outcome}</p>
+                </div>` : ''}
+
+                ${(project.duration || project.engine || project.platform) ? `
                 <div class="modal-section">
                     <h3>Project Details</h3>
-                    <p><strong>Duration:</strong> ${project.duration}</p>
-                    <p><strong>Engine:</strong> ${project.engine}</p>
-                    <p><strong>Platform:</strong> ${project.platform}</p>
-                </div>
+                    ${project.duration ? `<p><strong>Duration:</strong> ${project.duration}</p>` : ''}
+                    ${project.engine ? `<p><strong>Engine:</strong> ${project.engine}</p>` : ''}
+                    ${project.platform ? `<p><strong>Platform:</strong> ${project.platform}</p>` : ''}
+                </div>` : ''}
 
+                ${(project.technologies || project.tools) ? `
                 <div class="modal-section">
-                    <h3>Technologies</h3>
+                    <h3>${project.technologies ? 'Technologies' : 'Tools'}</h3>
                     <div class="modal-tags">
-                        ${project.technologies.map(t => `
+                        ${(project.technologies || project.tools).map(t => `
                             <span class="project-tag">${t}</span>
                         `).join('')}
                     </div>
-                </div>
+                </div>` : ''}
 
                 <div class="modal-section">
                     <h3>Tags</h3>
