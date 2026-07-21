@@ -105,21 +105,40 @@
     emailInput.addEventListener('input', validateEmail);
     messageInput.addEventListener('input', validateMessage);
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-        const isNameValid = validateName();
-        const isEmailValid = validateEmail();
-        const isMessageValid = validateMessage();
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isMessageValid = validateMessage();
 
-        if (isNameValid && isEmailValid && isMessageValid) {
-            successMessage.textContent = "Your message has been sent successfully!";
-            form.reset();
+    if (!isNameValid || !isEmailValid || !isMessageValid) {
+        successMessage.textContent = "";
+        return;
+    }
 
-            nameInput.classList.remove('input-success');
-            emailInput.classList.remove('input-success');
-            messageInput.classList.remove('input-success');
-        } else {
-            successMessage.textContent = "";
-        }
+    emailjs.send("service_28fpwqm", "template_8eonv2e", {
+        name: nameInput.value,
+        email: emailInput.value,
+        message: messageInput.value
+    })
+    .then(() => {
+
+        successMessage.textContent =
+            "Message sent successfully!";
+
+        form.reset();
+
+        nameInput.classList.remove("input-success");
+        emailInput.classList.remove("input-success");
+        messageInput.classList.remove("input-success");
+
+    })
+    .catch(() => {
+
+        successMessage.textContent =
+            "Something went wrong. Please try again.";
+
     });
+
+});
